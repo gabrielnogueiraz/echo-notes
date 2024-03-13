@@ -59,7 +59,7 @@ export function App() {
 
       <div className='h-px bg-slate-700'></div>
 
-      <div className="grid grid-cols-3 gap-6 auto-rows-[250px]">
+      <div className="flex flex-col gap-4 sm:flex-row md:flex-col w-full">
         <NewNoteCard onNoteCreated={onNoteCreated} />
         
         {filteredNotes.map(note => {
